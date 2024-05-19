@@ -3,6 +3,7 @@
     <app-bar />
     <acknowledge />
     <contact-me />
+    <h2>My Story</h2>
     <my-timeline />
   </v-container>
 </template>
