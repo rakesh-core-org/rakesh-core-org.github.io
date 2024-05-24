@@ -1,11 +1,30 @@
 <template>
 
 <v-alert
-    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem!"
-    title="Alert title"
+    v-model="alert"
+    text="You are viewing the recent version of my profile"
+    title="Autoclose"
     type="info"
     variant="tonal"
     closable
   ></v-alert>
   
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      alert: true
+    }
+  },
+  created(){
+    setTimeout(()=>{
+      this.alert=false
+    },5000)
+  }
+
+}
+
+</script>

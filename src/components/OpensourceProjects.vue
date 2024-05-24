@@ -1,14 +1,17 @@
 <template>
 
 <v-speed-dial
-  location="bottom left"
-  transition="fade-transition"
+  transition="slide-x-transition"
+
+    location="bottom right" 
 >
   <template v-slot:activator="{ props: activatorProps }">
     <v-fab
+    
       v-bind="activatorProps"
       size="large"
-      icon="$vuetify"
+      :icon="mdiOpenSourceInitiative"
+
     ></v-fab>
   </template>
 
@@ -19,3 +22,15 @@
 </v-speed-dial>
 
 </template>
+<script>
+import { mdiOpenSourceInitiative } from '@mdi/js';
+export default {
+  data() {
+    return {
+      mdiOpenSourceInitiative,
+    }
+  }
+}
+
+
+</script>
