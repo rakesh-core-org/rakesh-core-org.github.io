@@ -1,5 +1,5 @@
 <template>
-<v-card title="About Me" variant="plain">
+<v-card title="whoami" variant="plain">
 <v-card-text>
     I am a team player with team managing capability and have
 good debugging skills. Having interest in learning hot technology in short span of time. Sharing

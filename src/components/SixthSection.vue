@@ -1,30 +1,39 @@
 <template>
-    <v-container class="bg-surface-variant">
+    <v-container>
+      <h2> What are my 4 quadrant skills</h2>
       <v-row no-gutters>
         <v-col>
-          <v-sheet class="pa-2 ma-2">
-            .v-col-auto
-          </v-sheet>
+          
+            <DevopsKnowledge />
+          
         </v-col>
         <v-col>
-          <v-sheet class="pa-2 ma-2">
-            .v-col-auto
-          </v-sheet>
+          
+            <CloudKnowledge />
+        
         </v-col>
   
         <v-responsive width="100%"></v-responsive>
   
+        <br />
         <v-col>
-          <v-sheet class="pa-2 ma-2">
-            .v-col-auto
-          </v-sheet>
+          
+            <SystemAdministrationKnowledge />
+          
         </v-col>
   
         <v-col>
-          <v-sheet class="pa-2 ma-2">
-            .v-col-auto
-          </v-sheet>
+          
+            <ArtificialIntelligenceKnowledge />
+          
         </v-col>
       </v-row>
     </v-container>
   </template>
+
+<script>
+import DevopsKnowledge from './DevopsKnowledge.vue'
+import CloudKnowledge from './CloudKnowledge.vue'
+import SystemAdministrationKnowledge from './SystemAdministrationKnowledge.vue'
+import ArtificialIntelligenceKnowledge from './ArtificialIntelligenceKnowledge.vue'
+</script>

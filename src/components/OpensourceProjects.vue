@@ -1,17 +1,13 @@
 <template>
-
 <v-speed-dial
-  transition="slide-x-transition"
-
-    location="bottom right" 
+  location="bottom right"
+  transition="fade-transition"
 >
   <template v-slot:activator="{ props: activatorProps }">
     <v-fab
-    
       v-bind="activatorProps"
       size="large"
       :icon="mdiOpenSourceInitiative"
-
     ></v-fab>
   </template>
 

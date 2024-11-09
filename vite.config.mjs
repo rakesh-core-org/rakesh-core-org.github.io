@@ -45,4 +45,8 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+//   devServer: {
+//     proxy: 'https://github.com/',
+//     changeOrigin: true
+// }
 })
